@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/app_bar_bg"
+    android:layout_height="88dp"
+    app:popupTheme="@style/AppTheme.NoActionBar.PopupOverlay">
+
+    <ImageView
+        android:id="@+id/menu"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp"
+        android:paddingEnd="16dp"
+        android:paddingStart="12dp"
+        android:paddingLeft="12dp"
+        android:src="@drawable/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/toolbarText"
+        fontPath="fonts/Roboto-Bold.ttf"
+        android:gravity="center"
+        android:layout_marginEnd="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:text="MINING"
+        android:singleLine="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:id="@+id/coinsView"
+            fontPath="fonts/Roboto-Light.ttf"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:singleLine="true"
+            android:text="0"
+            android:textColor="@color/colorAccent"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:paddingTop="4dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/toolbarCoinImage"
+            android:src="@drawable/satoshi"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>
